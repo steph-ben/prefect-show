@@ -8,10 +8,10 @@ from fetchers.s3.flows import create_flow_download
 from fetchers.utils import trigger_prefect_flow
 
 
-prefect_project_name = "laptop-gfs-project"
+prefect_project_name = "fetch-gfs"
 
 settings = {
-    'flow_name': "laptop-gfs-download",
+    'flow_name': "fetch-gfs",
     'timesteps': [0, 1, 2, 3, 4, 5, 6],
     'max_concurrent_download': 5,
     'download_dir': "/tmp/laptop/s3/gfs"
